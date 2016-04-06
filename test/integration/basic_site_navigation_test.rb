@@ -13,4 +13,22 @@ class BasicSiteNavigation < ActionDispatch::IntegrationTest
     page.visit "/archive"
     assert_match /history/i, page.body
   end
+
+  def test_a_user_can_moves_around_via_the_nav_bar
+    page.visit "/"
+    page.click_link "Book a Show"
+    assert_match /book/i, page.body
+
+    page.click_link "Calendar"
+    assert_match /calendar/i, page.body
+
+    page.click_link "Policies"
+    assert_match /policies/i, page.body
+
+    page.click_link "Venue"
+    assert_match /sound/i, page.body
+
+    page.click_link "History"
+    assert_match /history/i, page.body
+  end
 end
