@@ -4,16 +4,17 @@ Rails.application.routes.draw do
 
   get 'calendar' => 'calendar#current'
 
-  get 'booking' => 'booking#form'
+  get 'booking'  => 'booking#form'
   post 'booking' => 'booking#submit'
 
-  get 'information' => 'information#policy'
-  get 'information' => 'information#venue'
-  get 'information' => 'information#promotion'
-  get 'information' => 'information#general'
+  get 'information/policy'  => 'information#policy'
+  get 'information/venue'     => 'information#venue'
+  get 'information/promotion' => 'information#promotion'
+  get 'information/general'   => 'information#general'
 
-  get 'archive' => 'archive#photo'
-  get 'archive' => 'archive#flyer'
+  get 'archive'        => 'archive#index'
+  get 'archive/photos' => 'archive#photo'
+  get 'archive/flyers' => 'archive#flyer'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
