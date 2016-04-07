@@ -12,18 +12,17 @@ button press, to handle all the described functionality.
 
 Required Parts
 --------------
-- A basic website thats has:
-  - A form for bands to request a booking on a particular calendar day.
-  - A calendar that is updated via the DB when a bands booking is approved.
-  - A feed to the front page that cycles through that weeks shows.
-  - An archive of past show flyers
-  - Email sent to bands and onwer updating the status of bookings.
-  - Manager log-in with full CRUD capabilities
+- A form for bands to request a booking on a particular calendar day.
+- A calendar that is updated via the DB when a bands booking is approved.
+- A feed to the front page that cycles through that weeks shows.
+- An archive of past show flyers
+- Email sent to bands and onwer updating the status of bookings.
+- Manager log-in with full CRUD capabilities
 
 Other Possible features:
 ------------------------
-  - Automatic social media Updates.
-  - Band/Booker log-in for limited user-based CRUD
+- Automatic social media Updates.
+- Band/Booker log-in for limited user-based CRUD
 
 Plan of Attack
 --------------
