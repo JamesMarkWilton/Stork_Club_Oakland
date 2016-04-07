@@ -17,21 +17,12 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 body {
-  background: black;
- }
+     background: black;
+     color: #FFF;
+      }
+.navbar-inverse .navbar-brand {
+      color: red;
+      font-family: Allerta Stencil;
+      font-size: 30px;
+    }
 
- h1, h2, h3, h4, h5, h6 {
-   font-weight: 100;
- }
-
- nav {
-   .navbar-brand {
-     a {
-       color: #BD1E23;
-       font-weight: bold;
-       &:hover {
-         text-decoration: none;
- }
- }
- }
- }
