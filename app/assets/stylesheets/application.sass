@@ -14,15 +14,32 @@
  *= require_self
  */
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
-body {
-     background: black;
-     color: #FFF;
-      }
-.navbar-inverse .navbar-brand {
-      color: red;
-      font-family: Allerta Stencil;
-      font-size: 30px;
-    }
+@import "bootstrap-sprockets"
+@import "bootstrap"
 
+$white: #F00
+
+body
+  color: $white
+  background-color: #000
+  text-align: center
+
+.navbar-inverse .navbar-brand
+  color: red
+  font-family: Allerta Stencil
+  font-size: 30
+
+.flyer-large
+  width: 40%
+  height: relative
+  margin: 20
+
+.flyer-medium
+  width: 30%
+  height: relative
+  margin: 20
+
+.flyer-small
+  width: 20%
+  height: relative
+  margin: 20
