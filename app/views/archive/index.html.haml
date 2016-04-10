@@ -1,0 +1,7 @@
+- @flyers.each do |flyer|
+  - flyer_size = %w[large medium small].sample
+
+  = image_tag("#{flyer.file_path}", class: "flyer-#{flyer_size}")
+    - @bands.where("booking_id = #{flyer.booking_id}").each do |band|
+
+
